@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(104, 44, 255);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  color:white;
+}
+
+
+.Card {
+  display: flex;          
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+  background-color: #fff5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* or any other width that fits your design */
+  margin: 10px; /* optional for spacing, adjust as necessary */
+
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.Card img {
+  width: 200px; 
+  height: 200px;
+}
+
+.Card h2 {
+  
+  font-size: 24px;
+  color: #333;
+}
+
+.Card p {
+  font-size: 18px;
+  color: #666;
+}
+.Card {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; 
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+.Container {
+  display: flex;          /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center;    /* Centers children horizontally in the container */
+  justify-content: center;/* Centers children vertically in the container */
+     
+}
+.CardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the start of the container */
+  align-items: flex-start; /* Align items to the start, avoids vertical stretching */
+  gap: 20px;
+  padding: 20px; /* Gives some space inside the container */
+  
+}
